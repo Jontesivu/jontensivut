@@ -1,0 +1,38 @@
+<html>
+<head>
+<body style="background-color:navy;">
+<title>Sivu 2.</title>
+</head>
+<body>
+
+<h1>Tervetuloa seuraavalle sivulle.</h1>
+
+<ul>
+  <li>despakoira</li>
+  <li>lätty</li>
+  <li>juu</li>
+</ul>  
+
+<p>Image to use:</p>
+<img id="manu" src="manu.jpg" alt="The Scream" width="220" height="277">
+
+<p>Tässä on mäny:</p>
+<canvas id="myCanvas" width="250" height="300"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<p><button onclick="myCanvas()">Paina tästä</button></p>
+
+<script>
+function myCanvas() {
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("manu.jpg");
+  ctx.drawImage(img,10,10);
+}
+</script>
+
+<img src="juu.gif" alt="Obama" width="500" height="500">
+
+</body>
+</html>
